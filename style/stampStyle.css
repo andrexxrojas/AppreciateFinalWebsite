@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --fontClr: #ececec;
+    --bgClr: #000000;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "MontserratBold";
+    src: url("../fonts/Montserrat/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url("../fonts/Montserrat/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "MontserratMedium";
+    src: url("../fonts/Montserrat/Montserrat-Medium.otf");
+}
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../fonts/Montserrat/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: "Quantify";
+    src: url("../fonts/Quantify/Quantify.ttf");
+}
+/* Fonts End */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
+    background-image: url("../img/Background.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.container{
+    margin: 0 140px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+/* Title */
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.title span:nth-child(1){
+    font-family: "Quantify";
+    font-weight: 500;
+    font-size: 64px;
+    text-align: center;
+
+    background: rgb(0,243,252);
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title span:nth-child(2){
+    font-family: "Quantify";
+    font-weight: 500;
+    font-size: 160px;
+    text-align: center;
+
+    background: rgb(0,243,252);
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title p{
+    font-family: "MontserratRegular";
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 44.5px;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 1071px;
+}
+
+#caption{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.inputBox{
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    margin: 8px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.inputBox input[type="text"]{
+    width:  225px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 14px;
+    text-transform: uppercase;
+}
+
+#subCaption{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #9E9E9E;
+}
+/* Title End */
+
+/* Stamps */
+.stamp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.stamp h1{
+    font-family: "MontserratBold";
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+
+    background: rgb(0,243,252);
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stamp p{
+    font-family: "MontserratMedium";
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 60px 0;
+    max-width: 1071px;
+}
+
+.stampBoxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 36px;
+    row-gap: 36px;
+    max-width: 1000px;
+}
+
+.stampBoxes .stampBox{
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryStampContainer{
+    margin-bottom: 160px;
+}
+
+.categoryStampContainer h1{
+    font-family: "MontserratBold";
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 60px 0;
+
+    background: rgb(0,243,252);
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Stamps End */
+
+/* Footer */
+.footerExtra{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 962px;
+    padding: 0 18.5px;
+}
+
+.footer h4{
+    margin: 0 0 36px 0;
+    font-family: "Quantify";
+    font-size: 140px;
+    font-weight: 400;
+    letter-spacing: 14px;
+    text-align: center;
+}
+
+.footerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+
+#footerLogo{
+    width: 130px;
+    height: 86px;
+    object-fit: contain;
+}
+
+.socialMedia p,
+.email p{
+    font-family: "MontserratBold";
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.email p:nth-child(3){
+    font-family: "MontserratMedium";
+    font-weight: 500;
+}
+
+.footer hr{
+    width: 100%;
+    height: 4px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+#copyright{
+    margin: 10px 0 0 0;
+    font-family: "MontserratSemiBold";
+    font-size: 18px;
+    text-align: center;
+}
+/* Footer End */
+
+/*Waves */
+#waveTop{
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+#waveBottom{
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+    overflow: visible;
+    z-index: -1;
+}
+/* Waves End */
+
+/* Media Query */
+@media (max-width: 1200px){
+    .container{
+        margin: 0 50px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav .burger{
+        display: block;
+    }
+
+    .title span:nth-child(1){
+        font-size: 48px;
+    }
+
+    .title span:nth-child(2){
+        font-size: 100px;
+    }
+
+    .footer h4{
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        margin: 0 20px;
+    }
+
+    .mobile-menu{
+        width: 200px;
+    }
+
+    .title span:nth-child(1){
+        font-size: 18px;
+    }
+
+    .title span:nth-child(2){
+        font-size: 48px;
+    }
+
+    .title p{
+        font-size: 14px;
+    }
+
+    .stamp h1{
+        font-size: 32px;
+    }
+
+    .stamp p{
+        font-size: 14px;
+    }
+
+    .footer h4{
+        width: calc(100% + 30px);
+    }
+
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+    }
+
+    .socialMedia p,
+    .email p,
+    #copyright{
+        font-size: 14px;
+    }
+}
+/* Media Query End */
